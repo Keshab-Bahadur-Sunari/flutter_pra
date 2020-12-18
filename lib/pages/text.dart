@@ -19,6 +19,9 @@ class _TextWidgetsState extends State<TextWidgets> {
         child: Center(
           child: Text(
             'Text \n Widgets',
+            style: TextStyle(
+              fontSize: 55.0,
+            ),
           ),
         ),
       ),
