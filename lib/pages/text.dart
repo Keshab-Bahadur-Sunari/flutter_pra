@@ -172,7 +172,7 @@ class _TextWidgetsState extends State<TextWidgets> {
                                     ),
                                   ),
                                   Text(
-                                    'Text with overline Properties.',
+                                    'etc.',
                                     style: TextStyle(
                                       fontFamily: "Times New Roman",
                                       color: Colors.black,
