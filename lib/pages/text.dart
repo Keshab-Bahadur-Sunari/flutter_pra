@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pra/pages/drawer.dart';
+import 'package:dart_code_viewer/dart_code_viewer.dart';
 
 class TextWidgets extends StatefulWidget {
   @override
@@ -246,7 +247,39 @@ class _TextWidgetsState extends State<TextWidgets> {
                             style: TextStyle(
                               fontSize: 17.0,
                             ),
-                          )
+                          ),
+                          SizedBox(height:5.0,),
+                          Container(
+                            height: 200.0,
+                            width: MediaQuery.of(context).size.width,
+                            color: Colors.grey[300],
+                              child: DartCodeViewer(
+                                  r'''
+import 'package:flutter/material.dart';
+
+class DefaultTextStyle extends StatefulWidget {
+  @override
+  _DefaultTextStyleState createState() => _DefaultTextStyleState();
+}
+
+class _DefaultTextStyleState extends State<DefaultTextStyle> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Text(
+        'Text with Color Properties.',
+        style: TextStyle(
+          fontFamily: "Times New Roman",
+          color: Colors.green,
+        ),
+      ),
+    );
+  }
+}
+                                  ''',
+                                  backgroundColor: Colors.grey[300],
+                                ),
+                            ),
                         ],
                       ),
                     ),
