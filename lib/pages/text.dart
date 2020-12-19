@@ -132,6 +132,52 @@ class _TextWidgetsState extends State<TextWidgets> {
                                       ),
                                     ],
                                   ),
+                                  Text(
+                                    'Text with Color Properties.',
+                                    style: TextStyle(
+                                      fontFamily: "Times New Roman",
+                                      color: Colors.green,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Text with backgroundColor Properties.',
+                                    style: TextStyle(
+                                      fontFamily: "Times New Roman",
+                                      color: Colors.white,
+                                      backgroundColor: Colors.black,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Text with lineThrough Properties.',
+                                    style: TextStyle(
+                                      fontFamily: "Times New Roman",
+                                      color: Colors.black,
+                                      decoration: TextDecoration.lineThrough,
+                                    ),
+                                  ),
+                                  SizedBox(height: 5.0,),
+                                  Text(
+                                    'Text with overline Properties.',
+                                    style: TextStyle(
+                                      fontFamily: "Times New Roman",
+                                      color: Colors.black,
+                                      decoration: TextDecoration.overline,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Text with Unicode: x\u2082 \u0026 x\u00B2',
+                                    style: TextStyle(
+                                      fontFamily: "Times New Roman",
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Text with overline Properties.',
+                                    style: TextStyle(
+                                      fontFamily: "Times New Roman",
+                                      color: Colors.black,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
