@@ -255,6 +255,7 @@ class _TextWidgetsState extends State<TextWidgets> {
                             color: Colors.grey[300],
                               child: DartCodeViewer(
                                   r'''
+
 import 'package:flutter/material.dart';
 
 class DefaultTextStyle extends StatefulWidget {
@@ -342,7 +343,62 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
                             style: TextStyle(
                               fontSize: 17.0,
                             ),
-                          )
+                          ),
+                          SizedBox(height:5.0,),
+                          Container(
+                            height: 200.0,
+                            width: MediaQuery.of(context).size.width,
+                            color: Colors.grey[300],
+                              child: DartCodeViewer(
+                                  r'''
+                                  
+import 'package:flutter/material.dart';
+
+class DefaultTextStyle extends StatefulWidget {
+  @override
+  _DefaultTextStyleState createState() => _DefaultTextStyleState();
+}
+
+class _DefaultTextStyleState extends State<DefaultTextStyle> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: RichText(
+        text: TextSpan(children: [
+          TextSpan(
+            text: 'Flutter',
+            style: TextStyle(
+              fontSize: 23.0,
+              letterSpacing: 2.0,
+            ),
+          ),
+          TextSpan(
+            text: 'Rich Text',
+            style: TextStyle(
+              decoration: TextDecoration.underline,
+              fontWeight: FontWeight.w900,
+              fontSize: 23.0,
+              letterSpacing: 2.0,
+              color: Colors.green,
+              backgroundColor: Colors.white,
+            ),
+          ),
+          TextSpan(
+            text: 'Style',
+            style: TextStyle(
+              fontSize: 23.0,
+              letterSpacing: 2.0,
+            ),
+          ),
+        ]),
+      ),
+    );
+  }
+}
+                                  ''',
+                                  backgroundColor: Colors.grey[300],
+                                ),
+                            ),
                         ],
                       ),
                     ),
