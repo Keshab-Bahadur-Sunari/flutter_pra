@@ -51,10 +51,89 @@ class _TextWidgetsState extends State<TextWidgets> {
                                 color: Colors.purple,
                               ),
                             ),
-                            child: Image.asset(
-                              'assets/images/text.png',
-                              width: 60.0,
-                              height: 60.0,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Aa',
+                                    style: TextStyle(
+                                      fontSize: 60.0,
+                                      fontFamily: "Times New Roman",
+                                      fontWeight: FontWeight.w900,
+                                      decoration: TextDecoration.underline,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      RichText(
+                                        text: TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: 'I',
+                                              style: TextStyle(
+                                                fontFamily: "Times New Roman",
+                                                color: Colors.black,
+                                                fontStyle: FontStyle.italic,
+                                                fontSize: 30.0,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: 'talic',
+                                              style: TextStyle(
+                                                fontFamily: "Times New Roman",
+                                                color: Colors.black,
+                                                fontSize: 20.0,
+                                                fontStyle: FontStyle.italic,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: ' B',
+                                              style: TextStyle(
+                                                fontFamily: "Times New Roman",
+                                                color: Colors.black,
+                                                fontSize: 30.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: 'old ',
+                                              style: TextStyle(
+                                                fontFamily: "Times New Roman",
+                                                color: Colors.black,
+                                                fontSize: 20.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: 'U',
+                                              style: TextStyle(
+                                                fontFamily: "Times New Roman",
+                                                color: Colors.black,
+                                                fontSize: 30.0,
+                                                decoration:
+                                                    TextDecoration.underline,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: 'nderline',
+                                              style: TextStyle(
+                                                fontFamily: "Times New Roman",
+                                                color: Colors.black,
+                                                fontSize: 20.0,
+                                                decoration:
+                                                    TextDecoration.underline,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -148,8 +227,7 @@ class _TextWidgetsState extends State<TextWidgets> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: RichText(
-                                text: TextSpan(
-                                  children: [
+                                text: TextSpan(children: [
                                   TextSpan(
                                     text: 'Flutter',
                                     style: TextStyle(
