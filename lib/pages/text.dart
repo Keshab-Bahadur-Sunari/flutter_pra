@@ -268,10 +268,10 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Text(
-        'Text with Color Properties.',
+        'Flutter Default Text Style',
         style: TextStyle(
-          fontFamily: "Times New Roman",
-          color: Colors.green,
+          fontSize: 23.0,
+          color: Colors.white,
         ),
       ),
     );
@@ -354,12 +354,12 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
                                   
 import 'package:flutter/material.dart';
 
-class DefaultTextStyle extends StatefulWidget {
+class RichTextStyle extends StatefulWidget {
   @override
-  _DefaultTextStyleState createState() => _DefaultTextStyleState();
+  _RichTextStyleState createState() => _RichTextStyleState();
 }
 
-class _DefaultTextStyleState extends State<DefaultTextStyle> {
+class _RichTextStyleState extends State<RichTextStyle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
