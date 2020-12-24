@@ -309,10 +309,9 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
                               child: RichText(
                                 text: TextSpan(children: [
                                   TextSpan(
-                                    text: 'Flutter',
+                                    text: 'Flutter ',
                                     style: TextStyle(
                                       fontSize: 23.0,
-                                      letterSpacing: 2.0,
                                     ),
                                   ),
                                   TextSpan(
@@ -327,10 +326,9 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
                                     ),
                                   ),
                                   TextSpan(
-                                    text: 'Style',
+                                    text: ' Style',
                                     style: TextStyle(
                                       fontSize: 23.0,
-                                      letterSpacing: 2.0,
                                     ),
                                   ),
                                 ]),
