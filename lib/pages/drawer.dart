@@ -14,7 +14,7 @@ import 'package:flutter_pra/pages/searchbar.dart';
 import 'package:flutter_pra/pages/splashscreen.dart';
 import 'package:flutter_pra/pages/tabbarandtabview.dart';
 import 'package:flutter_pra/pages/text.dart';
-import 'package:flutter_pra/pages/textinput.dart';
+import 'package:flutter_pra/pages/textfield.dart';
 
 class OpenDrawer extends StatefulWidget {
   @override
@@ -86,11 +86,11 @@ class _OpenDrawerState extends State<OpenDrawer> {
               visualDensity: VisualDensity(horizontal: -4.0, vertical: -4.0),
               leading: Icon(Icons.text_fields),
               title: Text(
-                'Text Input Widget',
+                'TextField',
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => TextInputWidegts()));
+                    builder: (context) => TextFieldClass()));
               },
             ),
             ListTile(
