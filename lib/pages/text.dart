@@ -156,7 +156,9 @@ class _TextWidgetsState extends State<TextWidgets> {
                                       decoration: TextDecoration.lineThrough,
                                     ),
                                   ),
-                                  SizedBox(height: 5.0,),
+                                  SizedBox(
+                                    height: 5.0,
+                                  ),
                                   Text(
                                     'Text with overline Properties.',
                                     style: TextStyle(
@@ -248,13 +250,20 @@ class _TextWidgetsState extends State<TextWidgets> {
                               fontSize: 17.0,
                             ),
                           ),
-                          SizedBox(height:5.0,),
+                          SizedBox(
+                            height: 5.0,
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                            child: Divider(),
+                          ),
                           Container(
                             height: 200.0,
                             width: MediaQuery.of(context).size.width,
                             color: Colors.grey[300],
-                              child: DartCodeViewer(
-                                  r'''
+                            child: DartCodeViewer(
+                              r'''
 
 import 'package:flutter/material.dart';
 
@@ -278,9 +287,14 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
   }
 }
                                   ''',
-                                  backgroundColor: Colors.grey[300],
-                                ),
+                              backgroundColor: Colors.grey[300],
                             ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                            child: Divider(),
+                          ),
                         ],
                       ),
                     ),
@@ -342,13 +356,20 @@ class _DefaultTextStyleState extends State<DefaultTextStyle> {
                               fontSize: 17.0,
                             ),
                           ),
-                          SizedBox(height:5.0,),
+                          SizedBox(
+                            height: 5.0,
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                            child: Divider(),
+                          ),
                           Container(
                             height: 200.0,
                             width: MediaQuery.of(context).size.width,
                             color: Colors.grey[300],
-                              child: DartCodeViewer(
-                                  r'''
+                            child: DartCodeViewer(
+                              r'''
                                   
 import 'package:flutter/material.dart';
 
@@ -394,9 +415,14 @@ class _RichTextStyleState extends State<RichTextStyle> {
   }
 }
                                   ''',
-                                  backgroundColor: Colors.grey[300],
-                                ),
+                              backgroundColor: Colors.grey[300],
                             ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                            child: Divider(),
+                          ),
                         ],
                       ),
                     ),
